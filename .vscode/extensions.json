@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "ms-vscode-remote.remote-containers",
+    "vscjava.vscode-java-pack",
+    "redhat.vscode-commons",
+    "redhat.fabric8-analytics",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "ms-vscode.vscode-github-issue-notebooks",
+    "github.copilot-chat",
+	"github.copilot",
+	"richardwillis.vscode-gradle-extension-pack"
+  ]
+}
