@@ -12,7 +12,10 @@ application {
 }
 
 repositories {
-    mavenCentral()
+	// Maven Central Repository
+    maven {
+        url = uri("https://packages.code.var.blue/repository/maven-central/")
+    }
 }
 
 javafx {
