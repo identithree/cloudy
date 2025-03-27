@@ -24,6 +24,11 @@ javafx {
 }
 
 dependencies {
+	// Playwright
+	implementation("com.microsoft.playwright:playwright:1.51.0")
+	// JetBrains Annotations
+	implementation("org.jetbrains:annotations:26.0.2")
+	// JUnit (in test module only)
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
