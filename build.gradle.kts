@@ -71,7 +71,7 @@ val javaTargetVersion = (rootProject.properties["javaTargetVersion"]!! as String
 
 // Application Configuration
 application {
-    mainClass = "${group}.${archivesBaseName}.Main"
+    mainClass = "${group}.${archivesBaseName}.Cloudy"
 }
 
 // Maven Repositories (for dependency resolution, not publishing)

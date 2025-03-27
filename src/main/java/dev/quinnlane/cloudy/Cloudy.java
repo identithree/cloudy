@@ -1,20 +1,15 @@
 package dev.quinnlane.cloudy;
 
 import dev.quinnlane.cloudy.backend.Backend;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import dev.quinnlane.cloudy.frontend.Frontend;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Objects;
 import java.util.Properties;
 
-public class Main extends Application {
+public class Cloudy {
 	/**
 	 * Initializes a new instance of Log4J for use during execution
 	 */
@@ -29,7 +24,7 @@ public class Main extends Application {
 		String version;
 		Properties props = new Properties();
 
-		try (InputStream is = Main.class.getResourceAsStream("/gradle/version.properties")) {
+		try (InputStream is = Cloudy.class.getResourceAsStream("/gradle/version.properties")) {
 			props.load(is);
 			version = props.getProperty("version");
 		} catch (IOException e) {
@@ -42,17 +37,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 		logger.info("Starting Cloudy...");
-		// Launch JavaFX
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("views/MainView.fxml")));
-
-        stage.setTitle("Cloudy - v" + VERSION);
-        stage.setScene(new Scene(root));
-        stage.show();
+		Frontend.launch(Frontend.class, args);
 		logger.info("Cloudy has been started!");
     }
 }

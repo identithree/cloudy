@@ -1,4 +1,4 @@
-package dev.quinnlane.cloudy.controllers;
+package dev.quinnlane.cloudy.frontend.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
