@@ -7,148 +7,152 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<SplitPane dividerPositions="0.5818850267379678" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
-  <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-         <children>
-            <VBox layoutX="123.0" layoutY="90.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
-               <children>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                     <children>
-                        <Label style="-fx-font-weight: bold;" text="Hello, ">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <ChoiceBox prefWidth="150.0">
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                        </ChoiceBox>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-                     <children>
-                        <Label style="-fx-font-weight: bold;" text="56°">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                        <Label text="Cloudy">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+			   <AnchorPane HBox.hgrow="ALWAYS">
+				   <children>
+					   <VBox layoutX="123.0" layoutY="90.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+						   <children>
+							   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+								   <children>
+									   <Label style="-fx-font-weight: bold;" text="56°">
+										   <font>
+											   <Font size="28.0" />
+										   </font>
+									   </Label>
+									   <Label text="Cloudy">
+										   <font>
+											   <Font size="16.0" />
+										   </font>
+									   </Label>
+								   </children>
+							   </HBox>
+							   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+								   <children>
+									   <Label style="-fx-font-weight: bold;" text="Location">
                            <font>
                               <Font size="16.0" />
                            </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <BarChart alternativeColumnFillVisible="true" legendVisible="false">
-                    <xAxis>
-                      <CategoryAxis side="BOTTOM" />
-                    </xAxis>
-                    <yAxis>
-                      <NumberAxis side="LEFT" />
-                    </yAxis>
-                  </BarChart>
-               </children>
-            </VBox>
-         </children></AnchorPane>
-    <AnchorPane>
-         <children>
-            <VBox alignment="TOP_CENTER" layoutX="52.0" layoutY="121.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <HBox style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
-                     <children>
-                        <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets right="5.0" />
-                           </HBox.margin></ImageView>
-                        <VBox alignment="CENTER">
-                           <children>
-      						 <TextFlow>
-      							 <Text style="-fx-font-weight: bold" text="Hat " />
-      							 <Text text="The weather is cold as balls, so you should wear a hat." />
-      							 <Text style="-fx-font-style: italic" text=" Wear a beanie." />
-      						 </TextFlow>
-                           </children>
-                        </VBox>
-                     </children>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding></HBox>
-                  <HBox layoutX="15.0" layoutY="15.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
-                     <children>
-                        <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets right="5.0" />
-                           </HBox.margin>
-                        </ImageView>
-                        <VBox alignment="CENTER">
-                           <children>
-                              <TextFlow>
-                                 <children>
-                                    <Text style="-fx-font-weight: bold" text="Shirt " />
-                                    <Text text="The weather is cold as balls, so you should wear a hat." />
-                                    <Text style="-fx-font-style: italic" text=" Wear a beanie." />
-                                 </children>
-                              </TextFlow>
-                           </children>
-                        </VBox>
-                     </children>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </HBox>
-                  <HBox layoutX="15.0" layoutY="100.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
-                     <children>
-                        <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets right="5.0" />
-                           </HBox.margin>
-                        </ImageView>
-                        <VBox alignment="CENTER">
-                           <children>
-                              <TextFlow>
-                                 <children>
-                                    <Text style="-fx-font-weight: bold" text="Hat " />
-                                    <Text text="The weather is cold as balls, so you should wear a hat." />
-                                    <Text style="-fx-font-style: italic" text=" Wear a beanie." />
-                                 </children>
-                              </TextFlow>
-                           </children>
-                        </VBox>
-                     </children>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </HBox>
-                  <HBox layoutX="15.0" layoutY="184.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
-                     <children>
-                        <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
-                           <HBox.margin>
-                              <Insets right="5.0" />
-                           </HBox.margin>
-                        </ImageView>
-                        <VBox alignment="CENTER">
-                           <children>
-                              <TextFlow>
-                                 <children>
-                                    <Text style="-fx-font-weight: bold" text="Hat " />
-                                    <Text text="The weather is cold as balls, so you should wear a hat." />
-                                    <Text style="-fx-font-style: italic" text=" Wear a beanie." />
-                                 </children>
-                              </TextFlow>
-                           </children>
-                        </VBox>
-                     </children>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </HBox>
-               </children>
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
-            </VBox>
-         </children></AnchorPane>
-  </items>
-</SplitPane>
+									   </Label>
+									   <ChoiceBox prefWidth="150.0">
+										   <opaqueInsets>
+											   <Insets />
+										   </opaqueInsets>
+									   </ChoiceBox>
+								   </children>
+							   </HBox>
+							   <BarChart alternativeColumnFillVisible="true" legendVisible="false">
+								   <xAxis>
+									   <CategoryAxis side="BOTTOM" />
+								   </xAxis>
+								   <yAxis>
+									   <NumberAxis side="LEFT" />
+								   </yAxis>
+							   </BarChart>
+						   </children>
+					   </VBox>
+				   </children>
+			   </AnchorPane>
+			   <AnchorPane maxWidth="250.0">
+				   <children>
+					   <VBox alignment="TOP_CENTER" layoutX="52.0" layoutY="121.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+						   <children>
+							   <HBox style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
+								   <children>
+									   <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+										   <HBox.margin>
+											   <Insets right="5.0" />
+										   </HBox.margin>
+									   </ImageView>
+									   <VBox alignment="CENTER">
+										   <children>
+											   <TextFlow>
+												   <Text style="-fx-font-weight: bold" text="Hat " />
+												   <Text text="The weather is cold as balls, so you should wear a hat." />
+												   <Text style="-fx-font-style: italic" text=" Wear a beanie." />
+											   </TextFlow>
+										   </children>
+									   </VBox>
+								   </children>
+								   <padding>
+									   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+								   </padding>
+							   </HBox>
+							   <HBox layoutX="15.0" layoutY="15.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
+								   <children>
+									   <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+										   <HBox.margin>
+											   <Insets right="5.0" />
+										   </HBox.margin>
+									   </ImageView>
+									   <VBox alignment="CENTER">
+										   <children>
+											   <TextFlow>
+												   <children>
+													   <Text style="-fx-font-weight: bold" text="Shirt " />
+													   <Text text="The weather is cold as balls, so you should wear a hat." />
+													   <Text style="-fx-font-style: italic" text=" Wear a beanie." />
+												   </children>
+											   </TextFlow>
+										   </children>
+									   </VBox>
+								   </children>
+								   <padding>
+									   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+								   </padding>
+							   </HBox>
+							   <HBox layoutX="15.0" layoutY="100.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
+								   <children>
+									   <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+										   <HBox.margin>
+											   <Insets right="5.0" />
+										   </HBox.margin>
+									   </ImageView>
+									   <VBox alignment="CENTER">
+										   <children>
+											   <TextFlow>
+												   <children>
+													   <Text style="-fx-font-weight: bold" text="Hat " />
+													   <Text text="The weather is cold as balls, so you should wear a hat." />
+													   <Text style="-fx-font-style: italic" text=" Wear a beanie." />
+												   </children>
+											   </TextFlow>
+										   </children>
+									   </VBox>
+								   </children>
+								   <padding>
+									   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+								   </padding>
+							   </HBox>
+							   <HBox layoutX="15.0" layoutY="184.0" style="-fx-background-color: #dfdfdf; -fx-background-radius: 10;">
+								   <children>
+									   <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+										   <HBox.margin>
+											   <Insets right="5.0" />
+										   </HBox.margin>
+									   </ImageView>
+									   <VBox alignment="CENTER">
+										   <children>
+											   <TextFlow>
+												   <children>
+													   <Text style="-fx-font-weight: bold" text="Hat " />
+													   <Text text="The weather is cold as balls, so you should wear a hat." />
+													   <Text style="-fx-font-style: italic" text=" Wear a beanie." />
+												   </children>
+											   </TextFlow>
+										   </children>
+									   </VBox>
+								   </children>
+								   <padding>
+									   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+								   </padding>
+							   </HBox>
+						   </children>
+						   <padding>
+							   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+						   </padding>
+					   </VBox>
+				   </children>
+			   </AnchorPane>
+   </children>
+</HBox>
