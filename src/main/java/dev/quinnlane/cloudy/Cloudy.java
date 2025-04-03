@@ -11,7 +11,6 @@ import java.util.Properties;
 
 public class Cloudy {
 	/**
-	 * Initializes a new instance of Log4J for use during execution
 	 * This field stores the arguments that Cloudy was executed with.
 	 */
 	private static String[] arguments;
@@ -84,9 +83,6 @@ public class Cloudy {
 		logger.info("Starting Cloudy v%s...", VERSION);
 		arguments = args;
 
-    public static void main(String[] args) {
-		logger.info("Starting Cloudy...");
-		Frontend.launch(Frontend.class, args);
 		// Initialize backend and frontend
 		frontend = new Frontend();
 
