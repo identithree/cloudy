@@ -1,3 +1,5 @@
+![Cloudy Repository Banner](.github/assets/README_banner.png)
+
 # Cloudy - A Simple Weather App
 
 Cloudy is a simple Java application that uses **JavaFX** for the user interface and **Playwright** with **Browserless** for web scraping. The application fetches current weather data and recommends an outfit based on the conditions.
