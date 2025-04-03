@@ -1,6 +1,5 @@
 package dev.quinnlane.cloudy;
 
-import dev.quinnlane.cloudy.backend.Backend;
 import dev.quinnlane.cloudy.frontend.Frontend;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
