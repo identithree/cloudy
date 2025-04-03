@@ -1,6 +1,5 @@
 package dev.quinnlane.cloudy;
 
-import dev.quinnlane.cloudy.backend.Backend;
 import dev.quinnlane.cloudy.frontend.Frontend;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -30,10 +29,6 @@ public class Cloudy {
 	 */
 	protected static final Logger logger = LogManager.getFormatterLogger("Cloudy > Common");
 
-	/**
-	 *
-	 */
-	public static final Logger logger = LogManager.getFormatterLogger("Cloudy");
 	/**
 	 * Retrieves the instance of the Frontend used during runtime.
 	 *
