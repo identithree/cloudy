@@ -16,7 +16,7 @@ import java.text.DecimalFormat;
  * including conversion to customary format.
  */
 public class Speed extends Unit<Integer> {
-	protected static final UnitLocales MIXED_UNITS = UnitLocales.SI;
+	private static final UnitLocales MIXED_UNITS = UnitLocales.SI;
 	private static final UnitStrings UNIT_STRINGS = new UnitStrings("km/h", "mph", MIXED_UNITS);
 
 	/**
