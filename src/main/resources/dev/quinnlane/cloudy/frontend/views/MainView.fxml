@@ -4,6 +4,10 @@
 
 <!--<fx:include source="TemperaturePanel.fxml"/>-->
 
-<AnchorPane fx:controller="dev.quinnlane.cloudy.frontend.controllers.MainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
-	<fx:include fx:id="temperaturePanel" source="TemperaturePanel.fxml"/>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.MainView">
+   <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <children>
+      	<fx:include fx:id="temperaturePanel" source="TemperaturePanel.fxml" />
+      </children>
+   </VBox>
 </AnchorPane>

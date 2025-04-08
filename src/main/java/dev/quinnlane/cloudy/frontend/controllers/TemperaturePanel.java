@@ -1,15 +1,14 @@
 package dev.quinnlane.cloudy.frontend.controllers;
 
 import dev.quinnlane.cloudy.common.unit.units.Temperature;
-import dev.quinnlane.cloudy.frontend.Frontend;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.HBox;
 
 import java.awt.*;
 
-public class TemperaturePanel extends Pane {
+public class TemperaturePanel extends HBox {
 	@FXML private Label temperatureRead;
 	@FXML private Image weatherImage;
 

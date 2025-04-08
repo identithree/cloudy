@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane styleClass="panel" stylesheets="@../styles/panel.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.TemperaturePanel">
-	<HBox alignment="CENTER">
+<HBox alignment="CENTER" prefWidth="293.0" spacing="10.0" styleClass="panel" stylesheets="@../styles/panel.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.TemperaturePanel">
 		<ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
-			<Image fx:id="weatherImage" url="@../images/weather-svgrepo-com.png"/>
+			<Image fx:id="weatherImage" url="@../images/weather-svgrepo-com.png" />
 		</ImageView>
-		<VBox alignment="CENTER">
-			<Label fx:id="temperatureRead" alignment="CENTER" contentDisplay="CENTER" text="69°">
+		<VBox alignment="CENTER" minWidth="-Infinity">
+			<Label fx:id="temperatureRead" alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" text="69° F" VBox.vgrow="ALWAYS">
             <font>
                <Font name="System Bold" size="24.0" />
-            </font></Label>
+            </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Label>
 		</VBox>
-	</HBox>
-</Pane>
+</HBox>
