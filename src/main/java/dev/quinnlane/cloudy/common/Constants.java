@@ -3,6 +3,7 @@ package dev.quinnlane.cloudy.common;
 import dev.quinnlane.cloudy.common.unit.Unit;
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 
 /**
  * The Constants class serves as a central repository for constant values and preset configurations
@@ -26,4 +27,6 @@ public class Constants {
 	 * trailing zeroes.
 	 */
 	public static final DecimalFormat DEFAULT_PRECISION = new DecimalFormat("#.###");
+	public static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("MM/dd");
+	public static final SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("h:mma");
 }
