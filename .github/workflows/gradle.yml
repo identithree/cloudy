@@ -34,7 +34,7 @@ jobs:
               uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
               with:
                   build-scan-publish: true
-                  build-scan-terms-of-use-url: "https://gradle.com/terms-of-service"
+                  build-scan-terms-of-use-url: "https://gradle.com/help/legal-terms-of-use"
                   build-scan-terms-of-use-agree: true
 
             - name: Build Cloudy with Gradle
