@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-
+<?import javafx.scene.text.Font?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.MainView">
    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
@@ -18,12 +17,19 @@
             		  <fx:include fx:id="locationPanel" source="../components/LocationPanel.fxml" />
             </children>
          </HBox>
-         <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
-            <children>
-      		  <fx:include fx:id="temperaturePanel" source="../components/TemperaturePanel.fxml" />
-      		  <fx:include fx:id="windPanel" source="../components/WindPanel.fxml" />
-            </children>
-         </VBox>
+		  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+			  <children>
+				  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+						spacing="10.0">
+					  <children>
+						  <fx:include fx:id="temperaturePanel" source="../components/TemperaturePanel.fxml"/>
+						  <fx:include fx:id="windPanel" source="../components/WindPanel.fxml"/>
+					  </children>
+				  </VBox>
+
+				  <fx:include fx:id="overTimePanel" source="../components/OverTimePanel.fxml"/>
+			  </children>
+		  </HBox>
       </children>
    </VBox>
    <padding>

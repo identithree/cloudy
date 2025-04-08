@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="panel" stylesheets="@../styles/panel.css"
+	  xmlns="http://javafx.com/javafx/17.0.12" fx:controller="dev.quinnlane.cloudy.frontend.controllers.OverTimePanel">
+	<children>
+		<Label text="Forecast">
+			<font>
+				<Font name="System Bold" size="12.0"/>
+			</font>
+		</Label>
+		<HBox spacing="10.0">
+			<fx:include fx:id="pill1" source="WeatherPill.fxml"/>
+			<fx:include fx:id="pill2" source="WeatherPill.fxml"/>
+			<fx:include fx:id="pill3" source="WeatherPill.fxml"/>
+			<fx:include fx:id="pill4" source="WeatherPill.fxml"/>
+			<fx:include fx:id="pill5" source="WeatherPill.fxml"/>
+		</HBox>
+	</children>
+</VBox>
