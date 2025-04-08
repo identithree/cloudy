@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="10.0" styleClass="panel" stylesheets="@../styles/panel.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.LocationPanel">
+   <children>
+      <Label text="Hello,">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField promptText="Enter your location." text="Boston">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</HBox>

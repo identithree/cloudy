@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox alignment="CENTER" prefWidth="293.0" spacing="10.0" styleClass="panel" stylesheets="@../styles/panel.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.TemperaturePanel">
+<HBox alignment="CENTER" spacing="10.0" styleClass="panel" stylesheets="@../styles/panel.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.TemperaturePanel">
 		<ImageView fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
 			<Image fx:id="weatherImage" url="@../images/weather-svgrepo-com.png" />
 		</ImageView>
