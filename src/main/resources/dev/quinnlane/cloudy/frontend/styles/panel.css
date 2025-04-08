@@ -1,0 +1,6 @@
+.panel {
+	-fx-padding: 10px;
+	-fx-background-color: whitesmoke;
+	-fx-border-radius: 10;
+	-fx-border-color: lightgray;
+}

@@ -1,16 +1,20 @@
 package dev.quinnlane.cloudy.frontend.controllers;
 
+import dev.quinnlane.cloudy.common.unit.UnitLocales;
+import dev.quinnlane.cloudy.common.unit.units.Temperature;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 
 public class MainView {
-    @FXML
-    public Label label;
+	@FXML
+	public TemperaturePanel temperaturePanelController;
 
-    public void initialize() {
-        String javaVersion = System.getProperty("java.version");
-        String javafxVersion = System.getProperty("javafx.version");
+	@FXML
+	public void initialize() {
+		updateFromBackend();
+	}
 
-        label.setText(String.format("Hello, JavaFX %s!%nRunning on Java %s", javafxVersion, javaVersion));
-    }
+	public void updateFromBackend() {
+		// TODO: Fetch temperature from call `Cloudy.getBackend().getProvider().getCurrentTemperature()`.
+		temperaturePanelController.setTemperatureRead(new Temperature(6.0, UnitLocales.CUSTOMARY));
+	}
 }
