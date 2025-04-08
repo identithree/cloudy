@@ -1,15 +1,10 @@
 package dev.quinnlane.cloudy.common.unit.units;
 
-// [INFO] Code is commented out in this class because the classes it relies
-//        on have not been committed to GitHub yet. Do not remove it thinking
-//        that it is dead code, thanks!
-//         - Q
-
-// import dev.quinnlane.cloudy.backend.Backend;
+import dev.quinnlane.cloudy.common.configuration.MockConfiguration;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
-// import java.util.Calendar;
+import java.util.Calendar;
 
 /**
  * The CompassRose enum represents the cardinal, ordinal, and half-wind directions of a compass rose,
@@ -100,7 +95,7 @@ public enum CompassRose {
 	 * @see #getHumanReadable()
 	 */
 	public String getAbbreviation() {
-		// if (this.ordinal() == 21 && Backend.TEMP_BE_SILLY && Calendar.MONTH == Calendar.MARCH) return "SXSW®";
+		if (this.ordinal() == 21 && MockConfiguration.FUN__EASTER_EGGS && Calendar.MONTH == Calendar.MARCH) return "SXSW®";
 
 		String abbreviation = this.name();
 
@@ -125,7 +120,7 @@ public enum CompassRose {
 	 * @see #toString()
 	 */
 	public String getHumanReadable() {
-		// if (this.ordinal() == 21 && Backend.TEMP_BE_SILLY && Calendar.MONTH == Calendar.MARCH) return "South by Southwest®";
+		if (this.ordinal() == 21 && MockConfiguration.FUN__EASTER_EGGS && Calendar.MONTH == Calendar.MARCH) return "South by Southwest®";
 		return humanReadable;
 	}
 
