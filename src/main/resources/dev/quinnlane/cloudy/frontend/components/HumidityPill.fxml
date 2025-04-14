@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -20,7 +19,7 @@
 				<Label text=" Humidity"/>
 			</children>
 		</HBox>
-		<Label text="99%">
+		<Label fx:id="humidity" text="99%">
 			<font>
 				<Font name="System Bold" size="24.0"/>
 			</font>

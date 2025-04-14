@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
@@ -17,18 +17,17 @@
 		</ImageView>
 		<TextFlow textAlignment="CENTER" VBox.vgrow="NEVER">
 			<children>
-				<Label id="sunrise" text="12:00">
+				<Label fx:id="sunrise" text="12:00">
 					<font>
 						<Font name="System Bold" size="12.0"/>
 					</font>
 				</Label>
-				<Label text="am to "/>
-				<Label id="sunset" text="4:30">
+				<Label text=" to "/>
+				<Label fx:id="sunset" text="4:30">
 					<font>
 						<Font name="System Bold" size="12.0"/>
 					</font>
 				</Label>
-				<Label text="pm"/>
 			</children>
 		</TextFlow>
 	</children>

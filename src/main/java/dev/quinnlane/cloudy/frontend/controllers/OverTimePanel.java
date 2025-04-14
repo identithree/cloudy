@@ -1,4 +1,7 @@
 package dev.quinnlane.cloudy.frontend.controllers;
 
-public class OverTimePanel {
+import javafx.scene.layout.VBox;
+
+public class OverTimePanel extends VBox {
+
 }
