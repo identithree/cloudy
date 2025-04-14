@@ -3,7 +3,7 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="/src/main/resources/dev/quinnlane/cloudy/common/geo/cities-USA.csv">
+        <entry key="/src/main/resources/dev/quinnlane/cloudy/common/geo/country/us/cities-by-zip.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
