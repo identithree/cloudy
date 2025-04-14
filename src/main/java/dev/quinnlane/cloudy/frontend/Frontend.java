@@ -12,8 +12,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.Objects;
 
 public class Frontend extends Application {
-	protected static final String TITLE = "Cloudy - v" + Cloudy.getVersion();
-	protected static final Logger logger = LogManager.getFormatterLogger("Cloudy > Frontend");
+	private static final String TITLE = "Cloudy - v" + Cloudy.getVersion();
+	public static final Logger logger = LogManager.getFormatterLogger("Cloudy > Frontend");
 
 	public Frontend() {
 		logger.trace("Frontend class constructor called from thread '%s'", Thread.currentThread().getName());

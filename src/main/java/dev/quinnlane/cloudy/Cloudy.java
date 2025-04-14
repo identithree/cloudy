@@ -27,7 +27,7 @@ public class Cloudy {
 	/**
 	 * Initializes a new instance of Log4J for use across this entrypoint class and all common classes.
 	 */
-	protected static final Logger logger = LogManager.getFormatterLogger("Cloudy > Common");
+	public static final Logger logger = LogManager.getFormatterLogger("Cloudy > Common");
 
 	/**
 	 * Retrieves the instance of the Frontend used during runtime.
