@@ -1,5 +1,7 @@
 package dev.quinnlane.cloudy;
 
+import dev.quinnlane.cloudy.backend.Backend;
+import dev.quinnlane.cloudy.common.configuration.MockConfiguration;
 import dev.quinnlane.cloudy.frontend.Frontend;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,6 +15,11 @@ public class Cloudy {
 	 * This field stores the arguments that Cloudy was executed with.
 	 */
 	private static String[] arguments;
+
+	/**
+	 * This field stores the instance of the Backend that Cloudy uses during runtime.
+	 */
+	private static Backend backend;
 
 	/**
 	 * This field stores the instance of the Backend that Cloudy uses during runtime.
@@ -36,6 +43,15 @@ public class Cloudy {
 	 */
 	public static Frontend getFrontend() {
 		return frontend;
+	}
+
+	/**
+	 * Retrieves the instance of the Backend used during runtime
+	 *
+	 * @return the current Backend instance
+	 */
+	public static Backend getBackend() {
+		return backend;
 	}
 
 	/**
@@ -79,7 +95,11 @@ public class Cloudy {
 		arguments = args;
 
 		// Initialize backend and frontend
+		backend = new Backend();
 		frontend = new Frontend();
+
+		// Load data provider from configuration
+		backend.setProvider(MockConfiguration.DATA_PROVIDER__CURRENT_PROVIDER);
 
 		logger.info("Cloudy has been started!");
     }

@@ -11,5 +11,5 @@ package dev.quinnlane.cloudy.backend.dataproviders;
  * </ul>
  */
 public enum ProviderType {
-	API, WEBSITE
+	API, WEBSITE, MOCK
 }
