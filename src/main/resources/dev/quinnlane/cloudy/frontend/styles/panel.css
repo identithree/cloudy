@@ -1,15 +1,15 @@
 .panel {
 	-fx-padding: 10px;
-	-fx-background-color: whitesmoke;
+	-fx-background-color: #ececec;
 	-fx-border-radius: 10;
 	-fx-background-radius: 10;
-	-fx-border-color: lightgray;
+	/*-fx-border-color: lightgray;*/
 }
 
 .pill {
-	-fx-background-color: white;
+	-fx-background-color: #f8f8f8;
 	-fx-border-radius: 10;
 	-fx-background-radius: 10;
-	-fx-border-color: lightgray;
+	/*-fx-border-color: lightgray;*/
 	-fx-padding: 10px;
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" styleClass="panel" stylesheets="@../styles/panel.css"
+	  xmlns="http://javafx.com/javafx/17.0.12" fx:controller="dev.quinnlane.cloudy.frontend.controllers.HumidityPill">
+	<children>
+		<HBox alignment="CENTER">
+			<children>
+				<ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../images/humidity.png"/>
+					</image>
+				</ImageView>
+				<Label text=" Humidity"/>
+			</children>
+		</HBox>
+		<Label fx:id="humidity" text="99%">
+			<font>
+				<Font name="System Bold" size="24.0"/>
+			</font>
+		</Label>
+	</children>
+</VBox>

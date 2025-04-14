@@ -4,7 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.quinnlane.cloudy.frontend.controllers.MainView">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+			prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f8f8f8;"
+			xmlns="http://javafx.com/javafx/17.0.12" fx:controller="dev.quinnlane.cloudy.frontend.controllers.MainView">
    <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
          <HBox alignment="CENTER_LEFT" spacing="10.0">
@@ -28,6 +30,9 @@
 				  </VBox>
 
 				  <fx:include fx:id="overTimePanel" source="../components/OverTimePanel.fxml"/>
+
+				  <fx:include fx:id="sunsetPanel" source="../components/SunsetPill.fxml"/>
+				  <fx:include fx:id="humididtyPanel" source="../components/HumidityPill.fxml"/>
 			  </children>
 		  </HBox>
       </children>
