@@ -19,7 +19,7 @@ public class WindPanel extends VBox {
 	public void initialize() {
 		setSpeed(new Speed(3999, UnitLocales.CUSTOMARY));
 		setCompass(CompassRose.EBS);
-		setNeedleDirection(CompassRose.EBS);
+//		setNeedleDirection(CompassRose.EBS);
 	}
 
 	public void setSpeed(Speed speed) {
