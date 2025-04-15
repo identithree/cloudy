@@ -50,6 +50,8 @@ public class Frontend extends Application {
 		stage.setTitle(TITLE);
 		stage.setScene(new Scene(root));
 		stage.initStyle(StageStyle.UNIFIED);
+		stage.setMinWidth(1200);
+		stage.setMinHeight(700);
 		stage.show();
 
 		/* TODO

@@ -18,6 +18,7 @@
 				<Image fx:id="image" url="@../images/weather-svgrepo-com.png"/>
 			</image>
 		</ImageView>
+		<VBox maxWidth="0.0" minHeight="15.0"/>
 		<Label fx:id="chance" text="50%">
 			<font>
 				<Font name="System Italic" size="10.0"/>

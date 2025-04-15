@@ -6,8 +6,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
-<HBox xmlns:fx="http://javafx.com/fxml/1" spacing="10.0" styleClass="panel" stylesheets="@../styles/panel.css"
-	  xmlns="http://javafx.com/javafx/17.0.12" fx:controller="dev.quinnlane.cloudy.frontend.controllers.AirQualityPanel">
+<HBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="10.0" styleClass="panel"
+	  stylesheets="@../styles/panel.css" xmlns="http://javafx.com/javafx/17.0.12"
+	  fx:controller="dev.quinnlane.cloudy.frontend.controllers.AirQualityPanel">
 	<children>
 		<VBox alignment="CENTER">
 			<children>

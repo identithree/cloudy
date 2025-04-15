@@ -13,3 +13,14 @@
 	/*-fx-border-color: lightgray;*/
 	-fx-padding: 10px;
 }
+
+.bento {
+	-fx-background-color: #f8f8f8;
+	-fx-border-radius: 10;
+	-fx-background-radius: 10;
+	-fx-padding: 10px;
+}
+
+bbox {
+	-fx-spacing: 10;
+}

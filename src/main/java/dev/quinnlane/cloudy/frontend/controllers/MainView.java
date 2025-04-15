@@ -13,8 +13,7 @@ public class MainView extends AnchorPane {
 	public SunsetPill sunsetPillController;
 	@FXML
 	public OverTimePanel overTimePanelController;
-	@FXML
-	public LocationPanel locationPanelController;
+	//	@FXML public LocationPanel locationPanelController;
 	@FXML
 	public HumidityPill humidityPillController;
 
