@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" spacing="10.0" styleClass="panel" stylesheets="@../styles/panel.css"
+	  xmlns="http://javafx.com/javafx/17.0.12" fx:controller="dev.quinnlane.cloudy.frontend.controllers.AirQualityPanel">
+	<children>
+		<VBox alignment="CENTER">
+			<children>
+				<Label text="Air Quality"/>
+				<HBox alignment="TOP_CENTER">
+					<children>
+						<Label fx:id="quality" minWidth="-Infinity" text="30">
+							<font>
+								<Font name="System Bold" size="29.0"/>
+							</font>
+						</Label>
+						<Circle fx:id="circle" fill="#ff0045" radius="5.0" stroke="TRANSPARENT" strokeType="INSIDE"
+								strokeWidth="0.0">
+							<HBox.margin>
+								<Insets left="3.0" top="7.0"/>
+							</HBox.margin>
+						</Circle>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</HBox>

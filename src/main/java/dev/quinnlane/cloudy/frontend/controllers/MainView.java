@@ -1,8 +1,6 @@
 package dev.quinnlane.cloudy.frontend.controllers;
 
 import dev.quinnlane.cloudy.backend.dataproviders.DataProvider;
-import dev.quinnlane.cloudy.common.unit.UnitLocales;
-import dev.quinnlane.cloudy.common.unit.units.Speed;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
@@ -25,10 +23,14 @@ public class MainView extends AnchorPane {
 	}
 
 	public void updateFromBackend(DataProvider provider) {
-		// TODO: Fetch temperature from call `Cloudy.getBackend().getProvider().getCurrentTemperature()`.
 		temperaturePanelController.setTemperatureRead(provider.getCurrentTemperature());
 
-//		var wind = Cloudy.getBackend().getProvider().getWind();
-		windPanelController.setSpeed(new Speed(10000, UnitLocales.CUSTOMARY));
+//		sunsetPillController.setSunrise(provider.getSunrise());
+//		sunsetPillController.setSunset(provider.getSunset());
+
+		var wind = provider.getWind();
+		if (wind != null) {
+			windPanelController.setSpeed(wind.z());
+		}
 	}
 }
