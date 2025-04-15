@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.shape.Circle;
 
-public class AirQualityPanel extends HBox {
+public class AirQualityPanel extends HBox implements UIPanel {
 	@FXML
 	private Label quality;
 	@FXML

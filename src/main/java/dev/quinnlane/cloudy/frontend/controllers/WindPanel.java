@@ -9,7 +9,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.transform.Rotate;
 
-public class WindPanel extends VBox {
+public class WindPanel extends VBox implements UIPanel {
 	@FXML private Label speedText;
 	@FXML private Label compassText;
 	@FXML

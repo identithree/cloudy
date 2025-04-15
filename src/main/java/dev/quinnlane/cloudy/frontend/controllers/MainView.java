@@ -4,7 +4,7 @@ import dev.quinnlane.cloudy.backend.dataproviders.DataProvider;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-public class MainView extends AnchorPane {
+public class MainView extends AnchorPane implements UIPanel {
 	@FXML
 	public TemperaturePanel temperaturePanelController;
 	@FXML

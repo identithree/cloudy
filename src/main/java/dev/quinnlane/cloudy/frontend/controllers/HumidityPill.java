@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
-public class HumidityPill extends VBox {
+public class HumidityPill extends VBox implements UIPanel {
 	@FXML
 	private Label humidity;
 

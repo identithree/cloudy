@@ -7,7 +7,7 @@ import javafx.scene.layout.VBox;
 
 import java.util.Date;
 
-public class SunsetPill extends VBox {
+public class SunsetPill extends VBox implements UIPanel {
 	@FXML
 	private Label sunrise;
 	@FXML

@@ -10,7 +10,7 @@ import javafx.scene.layout.VBox;
 
 import java.util.Date;
 
-public class WeatherPill extends VBox {
+public class WeatherPill extends VBox implements UIPanel {
 	@FXML
 	private Label temperature;
 	@FXML
