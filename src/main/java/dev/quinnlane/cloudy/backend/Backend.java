@@ -10,10 +10,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.text.DateFormat;
-import java.text.ParseException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Backend {
 	public static final Logger logger = LogManager.getFormatterLogger("Cloudy > Backend");
@@ -61,17 +60,19 @@ public class Backend {
 	}
 
 	/**
-	 * Converts a given string into a Date instance. If the string cannot be parsed
-	 * (e.g., due to an invalid format), the method logs an error and returns null.
+	 * Converts a given string to a {@link LocalDateTime} instance. If the string
+	 * cannot be parsed (e.g., due to an invalid format), the method logs an error
+	 * and returns null.
 	 *
-	 * @param date the string representation of the date to be converted
-	 * @return a {@link Date} instance if the conversion is successful, or null if the conversion fails
+	 * @param date the string representation of the date and time to be converted
+	 * @return a {@link LocalDateTime} instance if the conversion is successful,
+	 * or null if the conversion fails
 	 */
-	public static @Nullable Date stringToDate(String date) {
+	public static @Nullable LocalDateTime stringToLocalDateTime(String date) {
 		try {
-			return DateFormat.getDateInstance().parse(date);
-		} catch (ParseException e) {
-			logger.error("Failed to convert string \"%s\" to Date!", date, e);
+			return LocalDateTime.parse(date);
+		} catch (DateTimeParseException e) {
+			logger.error("Failed to convert string \"%s\" to LocalDateTime!", date, e);
 			return null;
 		}
 	}

@@ -221,17 +221,22 @@ public enum CompassRose {
 	 * @return The corresponding CompassRose direction based on the bearing and specified precision.
 	 */
 	public static CompassRose fromBearing(double bearing, @NotNull Specificity precision) {
-		int divisor = switch (precision) {
-			case CARDINAL -> 8;
-			case ORDINAL -> 4;
-			case HALF_WIND -> 2;
-			case QUARTER_WIND -> 1;
+		bearing = ((bearing % 360) + 360) % 360;
+
+		int divisions = switch (precision) {
+			case CARDINAL -> 4;
+			case ORDINAL -> 8;
+			case HALF_WIND -> 16;
+			case QUARTER_WIND -> 32;
 		};
 
-		CompassRose[] modifiedValueArray = Arrays.stream(CompassRose.values())
-				.filter(compassRose -> compassRose.getSpecificity().ordinal() <= precision.ordinal())
+		double segmentSize = 360.0 / divisions;
+		int index = (int) Math.round(bearing / segmentSize) % divisions;
+
+		CompassRose[] directions = Arrays.stream(CompassRose.values())
+				.filter(direction -> direction.getSpecificity().ordinal() <= precision.ordinal())
 				.toArray(CompassRose[]::new);
 
-		return modifiedValueArray[(int)(bearing / divisor)];
+		return directions[index];
 	}
 }
